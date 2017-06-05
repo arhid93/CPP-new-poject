@@ -1,0 +1,57 @@
+Prose Yang Terjadi Pada Metode binary search Adalah Sebagai Berikut :
+
+1. Memebaca data array.
+
+2. Apabila array belum terurut maka array di urutkan terlebih dahulu.
+
+3. Menentukan data yang akan dicari
+
+4. Menetukan aray elem tengah.
+
+5. Jika elemen tengah sama dengan data yang akan di cari, maka pencarian berhenti.
+
+6. Jika data tengah tidak sama dengan data yang di cari maka :
+
+  a. JIka elemen tengan > data yang di cari maka pencarian di lakukan pada setengah array pertama.
+
+  b. Jika elemen tengah kecil dari pada data yang di cari maka pencarian berikutnyadi lakukan pada setengah array berikumya.
+
+
+
+Ilustrasi Algoritma Bagi Dua (Binary Search)
+
+Misalkan saya mempunyai data sebagai berikut : | 8 | 12 | 25 | 57 | 37 | 5 | 2 | 15 | maka data tersebut akan di cek dan ternyata setelah di cek, data tersebut belum terurut, maka selanjutnya kita urutkan dulu datanya menjadi 
+
+| 2 | 5 | 8 | 12 | 15 | 25 | 37 | 57 | dan selanjutnya tentukan elemen tengahnya misalkan kita ambil : 12, jika data tengahsama dengan data yang akan di cari maka pencarian selesai, jika tidak sama dengan data yang akan di cari selanjutnya pemroses akan mencari data kebagian kiri, jika tidak ketemu maka pencarian atau pemroses akan di lanjutkan ke bagian kanan, jika tidak ketemu juga proses pencarian akan di hentikan.  
+
+
+
+contoh array int a [8];
+
+elemen = | 2 | 5 | 8 | 12 | 15 | 25 | 37 | 57 |
+
+indeks =   1   2   3   4     5     6      7    8
+
+cari = 12
+
+loop pertama : tengah = (imdeks awal + indeks akhir) div2=(1+8)div2=4
+
+                      elemen [tengah]= elemen[4] =12, berarti loop pertama langsung di temukan.
+
+
+
+Kinerja Algoritma Binary Search
+
+ a. Kelebihan Algoritma Pencarian Bagi Dua (binary Search)
+
+1. Untuk data lebih besar, waktu searching lebih cepat dan efisien
+
+2. beban komputasi lebih kecil
+
+3.Tidak perlu membandingkan data yang di cari dengan seluruh data arrray yang ada, cukup melalui titik tengahkemudian kita bisa menentukan ke mana selanjutnya mencari data yang akan di cari.
+
+ b. Kekurangan Algoritma Pencarian Bagi Dua (Binary Search)
+
+1. hanya dapat di gunakan pada data yang sudah terurut 
+
+2. Implementasi agak sedikit lebih rumit karena tidak bisa di gunakan pada data array yang masih acak jadi harusmelakukan sorting terlebih dahulu dalam implemntasinya.
